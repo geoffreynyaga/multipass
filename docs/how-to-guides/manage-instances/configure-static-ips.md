@@ -36,7 +36,7 @@ You can also leave the MAC address unspecified (just `--network name=localbr,mod
 
 ## Step 3: Configure the extra interface
 
-We now need to configure the manual network interface inside the instance. We can achieve that using Netplan. The following command plants the required Netplan configuration file in the instance:
+We now need to configure the manual network interface inside the instance. We can achieve that using [Netplan](https://netplan.io). The following command plants the required Netplan configuration file in the instance:
 
 ```{code-block} text
 multipass exec -n test1 -- sudo bash -c 'cat << EOF > /etc/netplan/10-custom.yaml
