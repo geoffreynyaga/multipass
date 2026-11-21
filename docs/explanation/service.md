@@ -3,7 +3,7 @@
 
 > See also: [Command-line interface](/reference/command-line-interface/index), [GUI client](/reference/gui-client), [Instance](/explanation/instance)
 
-In Multipass, **service** refers to the Multipass server that clients connect to and that controls and manages Multipass instances. This can also be referred to as the **daemon**.
+In [Multipass](https://snapcraft.io/multipass), **service** refers to the Multipass server that clients connect to and that controls and manages Multipass instances. This can also be referred to as the **daemon**.
 
 The Multipass daemon (`multipassd`) runs in the background and processes the requests from the Multipass [command-line interface](/reference/command-line-interface/index) and [GUI client](/reference/gui-client). The daemon is also in charge of the lifecycle of Multipass [instances](/explanation/instance).
 
