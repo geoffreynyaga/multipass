@@ -9,7 +9,7 @@ Multipass settings are organised in a tree structure, where each individual sett
 
 A **settings key** is a string in the form of a dot-separated path through the settings tree (such as `client.primary-name`). It specifies a path along the settings tree, from the root to a leaf. Thus, individual settings correspond to the leaves of the settings tree.
 
-Conceptually, branches of the tree can be singled out with wildcards, to refer to multiple settings at once. For instance, `local.<instance-name>.*` designates the settings that affect a specific instance. Wildcards can also be used to select separate branches. For example `local.*.cpus` refers to the number of CPUs of Multipass instances.
+Conceptually, branches of the tree can be singled out with [wildcards](https://www.kernel.org/), to refer to multiple settings at once. For instance, `local.<instance-name>.*` designates the settings that affect a specific instance. Wildcards can also be used to select separate branches. For example `local.*.cpus` refers to the number of CPUs of Multipass instances.
 
 ## Settings values
 
