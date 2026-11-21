@@ -12,9 +12,9 @@ In Multipass, there are two types of mounts: classic (default) and native.
 (explanation-mount-classic)=
 ## Classic mounts
 
-Classic mounts use SSHFS (SSH File System) to achieve file/directory sharing. This option is available across all our backends.
+Classic mounts use [SSHFS](https://github.com/libfuse/sshfs) (SSH File System) to achieve file/directory sharing. This option is available across all our backends.
 
-SSHFS is based on SSH, which pays a performance penalty to achieve secure communication.
+SSHFS is based on [SSH](https://www.openssh.com/), which pays a performance penalty to achieve secure communication.
 
 (explanation-mount-native)=
 ## Native mounts
@@ -22,7 +22,7 @@ SSHFS is based on SSH, which pays a performance penalty to achieve secure commun
 Native mounts use driver-dependent technologies to achieve the high performance. They are only available in the following cases:
 
 - On **Hyper-V**, where they are implemented with [SMB/CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview).
-- On **QEMU**, where they are implemented with [9P](https://en.wikipedia.org/wiki/9P_(protocol)).
+- On **[QEMU](https://www.qemu.org/)**, where they are implemented with [9P](https://en.wikipedia.org/wiki/9P_(protocol)).
 
 > See also: {ref}`driver-feature-disparities`.
 
