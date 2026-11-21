@@ -1,6 +1,9 @@
 name: Documentation link check on changes
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     paths:
       - 'docs/**'
