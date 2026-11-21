@@ -1,0 +1,44 @@
+name: Documentation link check on changes
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - '.github/workflows/linkcheck-diff.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  linkcheck-diff:
+    name: Check new and changed links
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Restore baseline cache
+        uses: actions/cache@v6
+        with:
+          path: docs/_dev/.linkcheck-diff
+          key: linkcheck-diff-${{ github.run_id }}
+          restore-keys: |
+            linkcheck-diff-
+
+      - name: Check new and changed links
+        run: make linkcheck-diff
