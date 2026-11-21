@@ -53,7 +53,7 @@ EOF'
 
 The IP address needs to be unique and in the same subnet as the bridge. The MAC address needs to match the extra interface inside the instance: either the one provided in Step 2 above or the one Multipass generated (you can find it with `ip link`).
 
-If you want to set a different name for the interface, you can add a [`set-name` property](https://netplan.readthedocs.io/en/stable/netplan-yaml/#properties-for-physical-device-types).
+If you want to set a different name for the interface, you can add a [`set-name` property](https://netplan.readthedocs.io/en/stable/netplan-yaml/#properties-for-all-device-types).
 
 ## Step 4: Apply the new configuration
 
