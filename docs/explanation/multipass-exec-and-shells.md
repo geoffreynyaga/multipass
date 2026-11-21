@@ -7,7 +7,7 @@
 
 When you call `multipass exec` from a shell, the command is first parsed by the shell you are in. The result of that parsing is what the multipass client sees in its argument list (`argv`).
 
-For example, when `multipass exec primary -- ls ~` is entered on a Linux shell, the tilde is translated to the calling user's local home directory before the command is passed to Multipass. But this is not the case on a Windows PowerShell, because “~” does not have the same meaning there.
+For example, when `multipass exec primary -- ls ~` is entered on a Linux shell, the [tilde](https://docs.python.org/3/) is translated to the calling user's local home directory before the command is passed to Multipass. But this is not the case on a Windows PowerShell, because “~” does not have the same meaning there.
 
 ### Quoting
 
