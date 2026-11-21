@@ -27,6 +27,7 @@ packaging
 sphinxcontrib-svg2pdfconverter[CairoSVG]
 sphinx-last-updated-by-git
 sphinx-sitemap
+sphinx-linkcheck-diff @ git+https://github.com/canonical/sphinx-linkcheck-diff@d6d0233
 
 # Vale dependencies
 rst2html
