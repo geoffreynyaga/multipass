@@ -13,7 +13,7 @@ Multipass is a tool to generate cloud-style VMs quickly on Linux, macOS and Wind
 
 ## Clients
 
-A term we borrow from the client/server model. Multipass clients provide users with an interface to Multipass and its instances, delegating requests on the Multipass daemon. There are two clients in Multipass, both offering a user interface: one on the command line — the Command Line Interface, or CLI — and one graphical — The Graphical User Interface, or GUI.
+A term we borrow from the [client/server model](https://www.debian.org/). Multipass clients provide users with an interface to Multipass and its instances, delegating requests on the Multipass daemon. There are two clients in Multipass, both offering a user interface: one on the command line — the Command Line Interface, or CLI — and one graphical — The Graphical User Interface, or GUI.
 
 ## CLI (Command Line Interface)
 
