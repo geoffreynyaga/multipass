@@ -7,6 +7,7 @@
 .sphinx/.wordlist.dic
 .sphinx/.doctrees/
 .sphinx/node_modules/
+_dev/
 
 package*.json
 _build
