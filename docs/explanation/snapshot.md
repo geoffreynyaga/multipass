@@ -15,7 +15,7 @@ You can view a list of the available snapshots with `multipass snapshots` and th
 
 ## Parents
 
-An instance's disk contents are recorded by snapshots in layers: each new snapshot records changes with respect to its parent snapshot. A snapshot's parent is the snapshot that was last taken or restored when the new snapshot is taken. Parent and children snapshots of a deleted snapshot retain a consistent record of the instance. Multipass provides information of snapshots' parent/child relations to help identify their role or contents.
+An instance's disk contents are recorded by snapshots in layers: each new snapshot records changes with respect to its parent snapshot. A snapshot's parent is the snapshot that was last taken or restored when the new snapshot is taken. Parent and children snapshots of a deleted snapshot retain a consistent record of the instance. Multipass provides information of snapshots' parent/child relations to help identify their role or contents. For background on layered disk images, see the [QEMU disk images documentation](https://www.qemu.org/docs/master/system/images.html).
 
 ```{caution}
 **Caveats:**
