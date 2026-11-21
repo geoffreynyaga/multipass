@@ -3,7 +3,7 @@
 
 > See also: {ref}`zones <reference-command-line-interface-zones>`, {ref}`enable-zones <reference-command-line-interface-enable-zones>`, {ref}`disable-zones <reference-command-line-interface-disable-zones>`, {ref}`launch <reference-command-line-interface-launch>`, {ref}`Instance <explanation-instance>`
 
-An **availability zone** (AZ) is a logical grouping of Multipass instances, modelled after the availability zones of public cloud providers. Zones let you spread instances out and simulate the loss of part of your "infrastructure", without affecting instances in other zones.
+An **availability zone** (AZ) is a logical grouping of [Multipass](https://ubuntu.com/server/docs) instances, modelled after the availability zones of public cloud providers. Zones let you spread instances out and simulate the loss of part of your "infrastructure", without affecting instances in other zones.
 
 Every instance belongs to exactly one zone, chosen at launch time and visible as the `Zone` field in [`multipass info`](reference-command-line-interface-info) and [`multipass list`](reference-command-line-interface-list) output.
 
