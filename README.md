@@ -3,7 +3,7 @@
 Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who
 want to spin up a fresh Linux environment with a single command. It uses QEMU on Linux, HCS (Host
 Compute System) on Windows and QEMU or the Apple Virtualization Framework on macOS to run virtual
-machines with minimal overhead. Multipass will fetch images for you and keep them up to date.
+machines with minimal overhead. Multipass fetches images for you and keeps them up to date.
 
 Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.
 
