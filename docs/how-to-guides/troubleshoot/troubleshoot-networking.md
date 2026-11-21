@@ -260,7 +260,7 @@ You can point the instance at a public resolver instead:
 
 On macOS, the Multipass network only allows through the single IP address it originally assigned to each instance. If you add another address (an "IP alias"), requests for it get out but the replies are filtered, so the address never answers.
 
-This means tools that depend on extra IP addresses, such as [MetalLB](https://metallb.universe.tf/) under [MicroK8s](https://microk8s.io/), won't work on macOS.
+This means tools that depend on extra IP addresses, such as MetalLB under [MicroK8s](https://microk8s.io/), won't work on macOS.
 
 **What to do**
 
