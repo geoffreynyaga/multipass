@@ -12,7 +12,7 @@ In Multipass, **platform** refers to the host computer's operating system. This 
 ````{tab-item} Linux
 :sync: Linux
 
-Multipass for Linux is published as a [snap package](https://snapcraft.io/docs/), available on the [Snap Store](https://snapcraft.io/multipass). Before you can use it, you need to [install `snapd`](https://snapcraft.io/docs/tutorials/install-the-daemon/). `snapd` is included in Ubuntu by default.
+Multipass for Linux is published as a [snap package](https://snapcraft.io/docs/), available on the [Snap Store](https://snapcraft.io/multipass). Before you can use it, you need to [install `snapd`](https://snapcraft.io/docs/tutorials/install-the-daemon/). `snapd` is included in [Ubuntu](https://documentation.ubuntu.com/) by default.
 
 ````
 

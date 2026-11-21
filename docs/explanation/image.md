@@ -15,4 +15,4 @@ You can also launch images from a file or URL, as long as they provide the tools
 * cloud-init
 * SSH
 
-For more information on the system requirements for a particular image, refer to official documentation (for example: [Ubuntu Core system requirements](https://ubuntu.com/core/docs/system-requirements)).
+For more information on the system requirements for a particular image, refer to [official documentation](https://documentation.ubuntu.com/) (for example: [Ubuntu Core system requirements](https://ubuntu.com/core/docs/system-requirements)).
