@@ -27,7 +27,7 @@ When Multipass is installed, the following drivers are selected by default:
 ## Deprecated drivers
 
 Linux:
-- As of Multipass version 1.16, LXD and libvirt are no longer available.
+- As of Multipass version 1.16, [LXD](https://canonical.com/lxd) and libvirt are no longer available.
 
 macOS:
 - As of Multipass version 1.13, Hyperkit is no longer available.

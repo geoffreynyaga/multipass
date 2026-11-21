@@ -130,7 +130,7 @@ Another option is to install `NetworkManager`, but other network handlers need t
 
 ## Create an instance with a custom DNS
 
-In some scenarios the default of using the system-provided DNS will not be sufficient. When that's the case, you can use the `--cloud-init` option to the [`launch`](reference-command-line-interface-launch) command, or modify the networking configuration after the instance started.
+In some scenarios the default of using the system-provided [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) will not be sufficient. When that's the case, you can use the `--cloud-init` option to the [`launch`](reference-command-line-interface-launch) command, or modify the networking configuration after the instance started.
 
 ### The `--cloud-init` approach
 
