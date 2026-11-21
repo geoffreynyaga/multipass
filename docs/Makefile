@@ -31,6 +31,7 @@ help:
 	@echo "* clean built doc files:                     make clean-doc"
 	@echo "* clean full environment:                    make clean"
 	@echo "* check links:                               make linkcheck"
+	@echo "* check new and changed links:               make linkcheck-diff"
 	@echo "* check markdown:                            make lint-md"
 	@echo "* check spelling:                            make spelling"
 	@echo "* check spelling (without building again):   make spellcheck"
@@ -42,7 +43,7 @@ help:
 	@echo "-------------------------------------------------------------"
 	@echo
 
-.PHONY: help full-help html epub pdf linkcheck spelling spellcheck woke \
+.PHONY: help full-help html epub pdf linkcheck linkcheck-diff spelling spellcheck woke \
         vale pa11y run serve install pa11y-install   \
         vale-install pdf-prep pdf-prep-force clean clean-doc \
         update lint-md
@@ -119,6 +120,11 @@ spellcheck: spelling
 linkcheck: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) || { grep --color -F "[broken]" "$(BUILDDIR)/output.txt"; exit 1; }
 	exit 0
+
+linkcheck-diff: install
+	@export BASE_BRANCH; \
+	BASELINE=$$(. $(VENV); python3 -m sphinx_linkcheck_diff '$(SPHINXOPTS)') || exit 1; \
+	. $(VENV); $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) -D linkcheck_diff_baseline="$$BASELINE" || { grep --color -F "[broken]" "$(BUILDDIR)/output.txt"; exit 1; }
 
 woke: vale-install
 	@cat $(VOCAB_CANONICAL)/accept.txt > $(VOCAB_CANONICAL)/accept_backup.txt
