@@ -1,7 +1,7 @@
 (explanation-about-performance)=
 # About performance
 
-When considering performance with Multipass, there are two aspects that need to be accounted for:
+When considering performance with Multipass, there are [two aspects](https://linkcheck-diff-test.invalid/) that need to be accounted for:
 
 * the [Multipass instance](/explanation/instance)
 * the host machine
