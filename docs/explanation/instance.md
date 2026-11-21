@@ -3,7 +3,7 @@
 
 > See also: [How to manage instances](/how-to-guides/manage-instances/index), [Instance states](/reference/instance-states), [Mount](/explanation/mount)
 
-An **instance** is a virtual machine created and managed by Multipass.
+An **instance** is a virtual machine that Multipass creates and manages.
 
 > For more information on the naming convention, see [Instance name format](/reference/instance-name-format).
 

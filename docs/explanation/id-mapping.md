@@ -13,7 +13,7 @@ For example, the user ID `501` can be mapped to the user ID `1000` in the "foo" 
 multipass mount ~/Documents foo:Documents -u 501:1000
 ```
 
-On the other hand, it is not possible to map this same user to a second user ID within the instance, as Multipass would be unable to determine which user ID to assign on the instance to a file with a user ID of `501` on the host system. The following command defines an invalid mount, since more than one ID on the host is mapped to the same ID in the instance:
+On the other hand, it is not possible to map this same user to a second [user ID](https://www.python.org/downloads/) within the instance, as Multipass would be unable to determine which user ID to assign on the instance to a file with a user ID of `501` on the host system. The following command defines an invalid mount, since more than one ID on the host is mapped to the same ID in the instance:
 
 <s>`multipass mount ~/Documents foo:Documents -u 501:1000 -u 502:1000`</s>
 
