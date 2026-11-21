@@ -207,7 +207,7 @@ The first step in Mac is to make sure a X server is running. The easiest way is 
 Once the X server is running, the procedure for macOS is the same as for Linux.
 
 ```{note}
-Note to Apple Silicon users: some applications requiring OpenGL will not work through X11 forwarding.
+Note to Apple Silicon users: some applications requiring OpenGL will not work through [X11](https://www.x.org/) forwarding.
 ```
 
 ````
